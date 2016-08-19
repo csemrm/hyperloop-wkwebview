@@ -42,7 +42,7 @@ WKWebView.prototype.createWebView = function createWebView() {
     this.web.setBackgroundColor(UIColor.clearColor());
     this.web.setOpaque(false);
     this.web.setNavigationDelegate(delegate);
-    this.web.loadRequest(NSURLRequest.alloc().initWithURL(NSURL.alloc().initWithString()));
+    this.web.loadRequest(NSURLRequest.alloc().initWithURL(NSURL.alloc().initWithString(this.wkurl)));
     
     return this.web;
     
