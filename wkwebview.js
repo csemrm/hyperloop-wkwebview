@@ -18,7 +18,7 @@ function WKWebView(args){
 WKWebView.prototype.createWindow = function createWindow(){
 	
 	this.win = Ti.UI.createWindow();
-	this.win.add(createWebView);
+	this.win.add(this.createWebView());
 	this.win.open();
 	
 };
